@@ -1,12 +1,12 @@
-const { connect, connection } = require("mongoose");
+const mongoose = require("mongoose");
 
 // Node will look for this environment variable and if it exists, it will use it. Otherwise, it will assume that you are running this application locally
-const connectionString =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/bookSearchEngine";
-
-connect(connectionString, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/bookSearchEngine",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 module.exports = mongoose.connection;
