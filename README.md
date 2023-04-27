@@ -20,3 +20,7 @@ Book Search Engine app was refactored from RESTful API to GrapgQL API with Apoll
 App deployed with Heroku
 
 [Book-Search-Engine-Link](https://book-search-engine-pia.herokuapp.com/)
+
+## Screenshot of deploy app
+
+![Printscreen of the web application](./server/asset/screenshot.jpg)
